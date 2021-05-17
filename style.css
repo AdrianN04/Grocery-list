@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  background-color: #f5f1dc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.addItems-container {
+  background-color: palegreen;
+}
+
+.addItems-container, .displayItems-container {
+  margin: 1rem 0;
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+  border: 2px solid #272932;
+  box-shadow: 0 5px 10px #272932;
+  border-radius: 1rem;
+}
+
+h2 {
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.addItems-title {
+  color: lightslategray;
+}
+
+.addItems-action, .displayItems-action{
+  width: 50%;
+  text-transform: capitalize;
+  border: 2px solid grey;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  display: none;
+  margin: 0.2rem auto;
+  
+}
+
+#form {
+  padding: 0.5rem 0;
+  text-align: left;
+}
+
+#inputField {
+  width: 60%;
+  padding: 0.2rem;
+  margin: 1% 1% 3%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid grey;
+  color: grey;
+}
+
+#inputField:focus {
+	outline: 0;
+	border-color: darkgreen;
+}
+
+#addItem {
+  color: white;
+  background-color: grey;
+  border-radius: 0.2rem;
+}
+
+#addItem:hover {
+  background: #b6c2d9;
+  color: #272932;
+}
+
+
+button {
+  padding: 0.2rem 0.5rem;
+  background: transparent;
+  border: 2px solid grey;
+  color: grey;
+  margin: 2%;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: all 1s linear;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translate(2px);
+  box-shadow: 2px 2px 3px 2px #ccc;
+}
+
+table, tr, th, td {
+  display: block;
+}
+
+table {
+  border-bottom: 3px solid black;
+  transition: all 1s ease-in-out;
+}
+
+
+.grocery-item {
+  padding: 0.5rem;
+  transition: all 1s ease-in-out;
+  /* overflow: none; */
+  width: 100%;
+  /* line-height: 2rem; */
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  text-align: left;
+  line-height: 1rem;
+}
+
+
+.grocery-item:hover{
+  background: #828489;
+}
+
+.grocery-item_title{
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+
+.grocery-item_link {
+  color: black;
+  border: 1px solid green;
+  padding: 0.1rem 1rem;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.grocery-item_link:hover{
+  box-shadow: 2px 2px 2px black;
+} 
+
+.marked {
+  text-decoration: line-through;
+  color : #ccc;
+}
+
+#clear-items {
+  margin: 1rem;
+  align-self: center;
+  background-color: palegreen;
+  color: lightslategray;
+}
+
+.alert{
+  color: red;
+  border-color: red;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.success{
+  color:rgb(32, 184, 32);
+  border-color: rgb(32, 184, 32);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.displayItems-action-marked {
+  color: lightseagreen;
+  border-color: blue;
+  display: block;
+  margin-bottom: 0.5rem;
+}

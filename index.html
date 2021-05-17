@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping list</title>
+  </head>
+  <body>
+    <div class="addItems-container">
+      <h4 class="addItems-action">display action</h4>
+      <h2 class="addItems-title">add grocery items</h2>
+      <form action="" id="form">
+        <input
+          type="text"
+          name="inputField"
+          id="inputField"
+          placeholder="Add your product..."
+        />
+        <button id="addItem">Add Item</button>
+      </form>
+      <div class="sort">
+        <button id="ascending">Sort asc</button>
+        <button id="descending">Sort desc</button>
+      </div>
+    </div>
+
+    <div class="displayItems-container">
+      <h4 class="displayItems-action">display action</h4>
+      <h2 class="displayItems-title">grocery items</h2>
+
+      <table class="table">
+        <tr class="grocery-item">
+          <th class="left">Product</th>
+          <th class="rigth">Action</th>
+        </tr>
+        <tbody id="tableBody">
+          <!-- test for centering table -->
+
+          <!-- <tr class="grocery-item">
+                <td class="grocery-item_title">banana</td>
+                <td class="tableAction">
+                  <a class="grocery-item_link" href="#">strike</a
+                  ><a class="grocery-item_link" href="#">delete</a>
+                </td>
+              </tr>  -->
+        </tbody>
+      </table>
+      <button id="clear-items">clear items</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
